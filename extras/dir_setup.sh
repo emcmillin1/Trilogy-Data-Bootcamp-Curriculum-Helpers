@@ -1,14 +1,14 @@
 #!/usr/local/bin/env bash
 
-# wipe existing Trilogy  directory (testing purposes
-rm -rf Trilogy
 
-# Make Trilogy Directory, change dir
+# Make Data_Bootcamp Directory, change dir
 mkdir Data_Bootcamp
 cd Data_Bootcamp
 
-# clone repo within Trilogy repo
-# git clone https://du.bootcampcontent.com/denver-coding-bootcamp/UDEN201805DATA1.git
+# clone class repository
+echo "Paste the link to your classes github repo here":
+read repo_name
+git clone $repo_name
 # ... will need user auth
 
 # make homework directory
@@ -18,7 +18,7 @@ cd HW_stage
 # get user input to link each existing repo (loop)
 for i in `seq 1 5`; do
     # ask user to pass repo name
-    echo "Paste the link to Homework" $i "here"
+    echo "Paste the git hub link to Homework" $i "here: (if no more repositories to paste in, just press enter)"
     # read whatever was written
     read varname
 
@@ -33,3 +33,10 @@ for i in `seq 1 5`; do
     # move back for next round
     cd ..
 done
+
+# clone curriculum_helpers repo to this location
+# move up one
+cd ..
+# clone repo
+git clone https://github.com/emcmillin1/curriculum_helpers.git
+
