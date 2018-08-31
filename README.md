@@ -43,7 +43,10 @@ This repository holds a number of scripts/ notebooks/ data files/ etc. that I ha
   * Contains any scripts created for sql. Includes materials covered in:
     * 10-SQL (Excluding SQL_alchemy which exists in the python directory)
 
-
+* ### vba_excel
+  * Contains files relating to excel and VBA. Including materials from weeks:
+    * 01-Excel
+    * 02-VBA-Script
 
 
 
